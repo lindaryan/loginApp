@@ -47,6 +47,9 @@
                                 <state key="normal" title="SUBMIT">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLoginClick:" destination="BYZ-38-t0r" eventType="touchDown" id="miY-Mp-W0K"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid credentials. Please try again." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00I-uf-bgZ">
                                 <rect key="frame" x="20" y="553" width="374" height="26.666666666666629"/>
@@ -81,6 +84,11 @@
                             <constraint firstItem="XmF-MC-sST" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yWS-Vq-Io5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="00I-uf-bgZ" id="ebl-mc-SbQ"/>
+                        <outlet property="passwordField" destination="RGj-Oe-bVj" id="Imd-q7-hIy"/>
+                        <outlet property="usernameField" destination="L1M-A4-5zL" id="YC9-g0-mJU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
