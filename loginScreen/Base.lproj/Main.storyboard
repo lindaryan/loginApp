@@ -22,8 +22,8 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnD-NY-pcs">
-                                <rect key="frame" x="138.66666666666666" y="188" width="136.99999999999997" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Log In:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnD-NY-pcs">
+                                <rect key="frame" x="136" y="188" width="142.33333333333337" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -52,8 +52,14 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid credentials. Please try again." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00I-uf-bgZ">
-                                <rect key="frame" x="20" y="553" width="374" height="26.666666666666629"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <rect key="frame" x="20" y="553" width="374" height="25.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attempts" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCg-aH-n4H">
+                                <rect key="frame" x="20" y="635" width="379" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -61,7 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="L1M-A4-5zL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2db-Bl-Kyi"/>
+                            <constraint firstItem="tCg-aH-n4H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1dd-SX-Rip"/>
                             <constraint firstItem="00I-uf-bgZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4dB-lo-qCd"/>
                             <constraint firstItem="RGj-Oe-bVj" firstAttribute="top" secondItem="L1M-A4-5zL" secondAttribute="bottom" constant="32" id="4ps-hg-ZCI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="00I-uf-bgZ" secondAttribute="trailing" constant="20" id="5US-9r-xwT"/>
@@ -71,28 +77,31 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L1M-A4-5zL" secondAttribute="trailing" constant="20" id="CPx-HX-AxC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WEA-BN-5Hv" secondAttribute="trailing" constant="20" id="D96-Fk-gbq"/>
                             <constraint firstItem="L1M-A4-5zL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EBi-de-C5o"/>
+                            <constraint firstItem="tCg-aH-n4H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IUu-bK-Y2N"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RGj-Oe-bVj" secondAttribute="trailing" constant="20" id="JQy-e9-DPn"/>
                             <constraint firstItem="00I-uf-bgZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Opk-zl-eZY"/>
+                            <constraint firstItem="XmF-MC-sST" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PRQ-4x-T8S"/>
+                            <constraint firstItem="tCg-aH-n4H" firstAttribute="top" secondItem="00I-uf-bgZ" secondAttribute="bottom" constant="55.333333333333371" id="VsG-yH-LoB"/>
                             <constraint firstItem="L1M-A4-5zL" firstAttribute="top" secondItem="bnD-NY-pcs" secondAttribute="bottom" constant="76" id="WRK-fn-Gjr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tCg-aH-n4H" secondAttribute="trailing" constant="20" id="dSj-Me-vbB"/>
                             <constraint firstItem="WEA-BN-5Hv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dWc-Sb-7ds"/>
-                            <constraint firstItem="WEA-BN-5Hv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ker-8E-D4M"/>
                             <constraint firstItem="XmF-MC-sST" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="l3d-In-Yvw"/>
                             <constraint firstItem="00I-uf-bgZ" firstAttribute="top" secondItem="WEA-BN-5Hv" secondAttribute="bottom" constant="60" id="mnD-Fi-e5l"/>
-                            <constraint firstItem="00I-uf-bgZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r37-zk-h6P"/>
                             <constraint firstItem="bnD-NY-pcs" firstAttribute="top" secondItem="XmF-MC-sST" secondAttribute="bottom" constant="92" id="sgM-cp-pWn"/>
                             <constraint firstItem="RGj-Oe-bVj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vX6-U9-IYR"/>
-                            <constraint firstItem="XmF-MC-sST" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yWS-Vq-Io5"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attemptsLabel" destination="tCg-aH-n4H" id="Ya5-Nq-vCX"/>
                         <outlet property="errorLabel" destination="00I-uf-bgZ" id="ebl-mc-SbQ"/>
                         <outlet property="passwordField" destination="RGj-Oe-bVj" id="Imd-q7-hIy"/>
+                        <outlet property="submitBtn" destination="WEA-BN-5Hv" id="Oyo-d2-thd"/>
                         <outlet property="usernameField" destination="L1M-A4-5zL" id="YC9-g0-mJU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+            <point key="canvasLocation" x="137.68115942028987" y="88.043478260869577"/>
         </scene>
     </scenes>
     <resources>
